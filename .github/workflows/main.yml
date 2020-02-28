@@ -1,6 +1,9 @@
-name: Docker Image CI
+name: Docker Compose CI
 
 on: [push]
+
+env:
+  TZ: ${{ secrets.TZ }}
 
 jobs:
 
