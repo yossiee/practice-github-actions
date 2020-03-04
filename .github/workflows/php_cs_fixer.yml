@@ -1,6 +1,6 @@
 name: php-cs-fixer
 
-on: [push, pull_request]
+on: pull_request
 
 jobs:
   fixer:
@@ -9,6 +9,7 @@ jobs:
     - uses: actions/checkout@v2
     - name: install dependencies
       run: composer install
+      run: composer require friendsofphp/php-cs-fixer
 
     - name: execute fixer
-      run: ./vendor/bin/php-cs-fixer fix ./ --dry-run
+      run: ./vendor/bin/php-cs-fixer fix --dry-run ./
