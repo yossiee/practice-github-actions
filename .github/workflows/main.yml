@@ -1,6 +1,12 @@
 name: docker-compose
 
-on: [push]
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
 
 env:
   TZ: ${{ secrets.TZ }}
