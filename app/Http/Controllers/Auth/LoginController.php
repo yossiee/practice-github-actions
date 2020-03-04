@@ -36,4 +36,13 @@ class LoginController extends Controller
     {
         $this->middleware('guest')->except('logout');
     }
+    public   function hofeusfa( )  {
+
+        $hoge = 'hog e'  ;
+
+$fuge = 'dsk';
+
+
+            return $hoge + $fuga  ;
+    }
 }

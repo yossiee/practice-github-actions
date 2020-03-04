@@ -13,4 +13,4 @@ jobs:
         composer require friendsofphp/php-cs-fixer
 
     - name: execute fixer
-      run: ./vendor/bin/php-cs-fixer fix --dry-run ./
+      run: ./vendor/bin/php-cs-fixer --version
