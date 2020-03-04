@@ -1,8 +1,6 @@
 name: php-cs-fixer
-description: 'Test PHP-CS-FIXER'
-author: 'yossiee'
 
-on: [pull_request]
+on: [push, pull_request]
 
 jobs:
   fixer:
