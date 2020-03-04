@@ -7,10 +7,10 @@ on: [pull_request]
 jobs:
   fixer:
     runs-on: macos-latest
-      steps:
-        - uses: actions/checkout@v2
-        - name: install dependencies
-          run: composer install -q --no-ansi --no-interaction --no-scripts --no-suggest --no-progress --prefer-dist
+    steps:
+    - uses: actions/checkout@v2
+    - name: install dependencies
+      run: composer install -q --no-ansi --no-interaction --no-scripts --no-suggest --no-progress --prefer-dist
 
-        - name: execute fixer
-         　run: ./vendor/bin/php-cs-fixer fix ./ --dry-run
+    - name: execute fixer
+      run: ./vendor/bin/php-cs-fixer fix ./ --dry-run
