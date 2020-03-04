@@ -6,3 +6,6 @@ docker/redis/
 tmp
 src/
 release/db
+vendor/
+composer.lock
+public/
