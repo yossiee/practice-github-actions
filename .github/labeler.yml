@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 web:
 - web/**/*
 api:
@@ -8,3 +9,10 @@ infrastructure:
 - infrastructure/**/*
 cli:
 - cli/**/*
+=======
+CI/CD:
+- .github/**/*
+docker:
+- docker/**/*
+- docker-compose.yml
+>>>>>>> Stashed changes
