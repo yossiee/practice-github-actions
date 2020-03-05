@@ -1,18 +1,5 @@
-<<<<<<< Updated upstream
-web:
-- web/**/*
-api:
-- api/**/*
-batch:
-- batch/**/*
-infrastructure:
-- infrastructure/**/*
-cli:
-- cli/**/*
-=======
 CI/CD:
 - .github/**/*
 docker:
 - docker/**/*
 - docker-compose.yml
->>>>>>> Stashed changes
