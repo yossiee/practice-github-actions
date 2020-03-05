@@ -1,11 +1,9 @@
 .DS_Store
 .env
 logs/
-docker/mariadb/
-docker/redis/
 tmp
 src/
-release/db
-vendor/
+bootstrap/
 composer.lock
 public/
+vendor/

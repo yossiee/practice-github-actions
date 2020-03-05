@@ -1,0 +1,7 @@
+CI/CD:
+- .github/**/*
+docker:
+- docker/**/*
+- docker-compose.yml
+documentation:
+- README.md
