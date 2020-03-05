@@ -3,3 +3,5 @@ CI/CD:
 docker:
 - docker/**/*
 - docker-compose.yml
+documentation:
+- README.md
