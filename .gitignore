@@ -2,7 +2,6 @@
 .env
 logs/
 tmp
-src/
 bootstrap/
 composer.lock
 public/

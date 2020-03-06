@@ -1,0 +1,15 @@
+name: php-cs-fixer
+
+on: pull_request
+
+jobs:
+  fixer:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: install dependencies
+      run: |
+        composer install
+        composer require friendsofphp/php-cs-fixer
+    - name: execute fixer
+      run: ./vendor/bin/php-cs-fixer fix ./ --dry-run

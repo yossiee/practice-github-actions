@@ -5,3 +5,11 @@ docker:
 - docker-compose.yml
 documentation:
 - README.md
+Front-end:
+- src/resources/**/*
+- src/webpack.mix.js
+Back-end:
+- src/app/**/*
+- src/routes/**
+Migration:
+- src/database/migrations/**
