@@ -1,0 +1,27 @@
+name: 'remind me to write a new post'
+
+on:
+  push:
+    branches:
+      - 'feature/issue'
+
+jobs:
+  crete_issue:
+    name: Create issue
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Install hub
+      uses: geertvdc/setup-hub@master
+
+    - name: Create a new issue
+      run: hub issue create \
+        -l posts \
+        -a ${{ github.repository_owner }} \
+        -m '[BOT]Write a new post! :octocat:'
+      env:
+        GITHUB_USER: ${{ secrets.GITHUB_USER }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
